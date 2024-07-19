@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    behavior: "smooth";
+    box-sizing: border-box;
+    @apply m-0 p-0 ;
+}
+
+body {
+    @apply min-h-screen bg-[#2E2E2E] w-full;
+    overflow-x: hidden;
+}
+
+h1 {
+    @apply text-xl sm:text-2xl md:text-4xl font-bold text-white text-center mt-10 space-x-1 lg:text-5xl ;
+}
+
+span{
+    @apply text-[#8000FF]
+}
+
+.circle{
+    @apply w-[200px] h-[200px] md:h-[506px] md:w-[506px] bg-[#1A3DB1] absolute top-0 left-0  ;
+    clip-path: circle(50% at left 0% );
+}
+
+.circle2{
+    @apply h-[150px] w-[150px] md:h-[424px] md:w-[424px] bg-[#0033FF] absolute top-0 left-0 ;
+    border: 1px solid #171717; 
+    clip-path: circle(35% at left 0%);
+}
+
+.circle3{
+    @apply w-[200px] h-[200px] md:h-[506px] md:w-[506px] bg-[#1A3DB1] absolute top-0 right-0;
+    clip-path: circle(50% at right 0%);
+}
+
+.circle4{
+    @apply  h-[150px] w-[150px] md:h-[424px] md:w-[424px] bg-[#0033FF] absolute top-0 right-0;
+    border: 1px solid #171717; 
+    clip-path: circle(35% at right 0%);
+}
+
+.input{
+    @apply flex flex-col w-full gap-2 md:flex-row  ;
+}
+
+.title{
+    @apply w-[90%] h-[70px] bg-[#373737] md:w-[300px] md:h-[70px] rounded-[10px] text-white p-2 translate-x-[5%] md:translate-x-0;
+}
+
+.link{
+    @apply  h-[70px] w-[90%] md:h-[70px] md:w-[410px] bg-[#373737] rounded-[10px] mt-2 ml-5 ;
+    transform: translateY(-4px);
+}
+
+input{
+    @apply bg-transparent text-lg absolute bottom-[7px] left-2 w-11/12 tracking-wide border-none outline-none;
+    border-bottom: 1px solid gray;
+}
+
+h2{
+    @apply flex absolute top-2 left-2 text-[15px] tracking-wide font-bold;
+}
+
+.content > button{
+    @apply bg-[#373737] w-[90%] translate-x-[5%] md:translate-x-0 p-4 my-3 text-white rounded-[10px] drop-shadow-lg font-bold tracking-wider text-xl md:w-full;
+    transition: 0.5s;
+}
+
+.content > button:hover{
+    @apply bg-[#222]
+}
