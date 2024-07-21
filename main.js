@@ -56,6 +56,7 @@ submit.addEventListener("click", () => {
             isUpdating = false;
             currentElement = null;
         } else {
+            submit.innerHTML = "add WebSite"
             console.log("Button clicked");
             console.log("webTitle value:", webTitle.value);
             console.log("webLink value:", webLink.value);
