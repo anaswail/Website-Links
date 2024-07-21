@@ -5,40 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Website BookMarks</title>
 </head>
 
 <body>
+    
     <div class="circle "></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
     <div class="circle4"></div>
     <h1>Website <span>B</span>ook<span>M</span>arks</h1>
-    <div class="content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[60%]">
+    <div class="content absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[60%] h-[70%] overflow-scroll">
         <div class="input">
             <div class="title drop-shadow-lg relative">
                 <h2> <img class="w-[20px] h-[20px]" src="images/icons8-type-64.png"> Web Title</h2>
-                <input  placeholder="Ex. Google" type="text">
+                <input id="webTitle" placeholder="Ex. Google" type="text">
             </div>
             <div class="link drop-shadow-lg text-white">
                 <h2> <img class="w-[20px] h-[20px] mr-1" src="images/icons8-website-100.png"> Web Link</h2>
-                <input  placeholder="Ex. https://google.com" type="text">
+                <input id="webLink" placeholder="Ex. https://www.google.com/" type="text">
             </div>
         </div>
-        <button >Add WebSite</button>
-        <ul class="head list-none text-white font-bold text-[15px] drop-shadow-md flex translate-x-[5%] md:translate-x-0 md:w-full justify-between bg-[#373737] rounded-[10px] mt-4 w-[90%]">
-            <li class="hover:bg-black cursor-pointer rounded-[10px]">Title</li>
-            <li class="hover:bg-black cursor-pointer rounded-[10px]">Link</li>
-            <li class="hover:bg-black cursor-pointer rounded-[10px]">Update</li>
-            <li class="hover:bg-black cursor-pointer rounded-[10px]">Delete</li>
+        <button id="submit">Add WebSite</button>
+        <ul class="head list-none text-white font-bold text-[15px] drop-shadow-md flex translate-x-[5%] md:translate-x-0 md:w-full justify-between bg-[#373737] rounded-[10px] mt-6 w-[90%]">
+            <li class="hover:bg-black">Title</li>
+            <li class="hover:bg-black">Link</li>
+            <li class="hover:bg-black">Update</li>
+            <li class="hover:bg-black">Delete</li>
         </ul>
-        <ul class="output list-none text-white font-bold text-[15px] drop-shadow-md flex translate-x-[5%] md:translate-x-0 md:w-full justify-between bg-[#373737] rounded-[10px] mt-2 w-[90%]">
-            <li class="px-[14px] py-2">Google</li>
-            <li class="bg-blue-700 hover:bg-blue-800 cursor-pointer rounded-[10px]">visit</li>
-            <li class="update bg-[#00ff1ad8] hover:bg-green-700 cursor-pointer rounded-[10px]">Update</li>
-            <li class="delete bg-[#ff0000e3] hover:bg-[#ff4848c6] cursor-pointer rounded-[10px]">Delete</li>
-        </ul>
+
+        <div class="outputContent">
+            <!-- <ul class="output list-none text-white font-bold text-[15px] drop-shadow-md flex translate-x-[5%] md:translate-x-0 md:w-full justify-between bg-[#373737] rounded-[10px] mt-2 w-[90%]">
+                <li id="Title">Google</li>
+                <li class="visit"><a href="https://google.com">Visit</a></li>
+                <li class="update">Update</li>
+                <li class="delete">Delete</li>
+            </ul> -->
+
+        </div>
+        
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
